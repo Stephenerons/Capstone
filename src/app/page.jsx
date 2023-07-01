@@ -16,7 +16,7 @@ import 'swiper/swiper-bundle.min.css';
 import jobs from './jsonfiles/jobs.json'
 import Image from 'next/image'
 import React from 'react'
-import { BsPlayCircle } from 'react-icons/Bs'
+import { BsPlayCircle } from 'react-icons/bs'
 import ill from './images/illustration.png'
 
 
@@ -485,12 +485,8 @@ export default function Page() {
       
           </div>
 
-        
-                <Image className='w-[531px] h-[493px]'  src={ill} width={800} height={800} alt='a_pleasant_girl_illustration'/>
-        
-
-
-
+                  <Image className='w-[531px] h-[493px]'  src={ill} width={800} height={800} alt='a_pleasant_girl_illustration'/>
+ 
       </div>
 
       <section className='mx-[100px] '>

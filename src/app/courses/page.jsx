@@ -8,7 +8,7 @@ import Ads from '../images/Googleads.png'
 import laptop from '../images/laptopondeskbcg.jpg'
 import typo from '../images/typography.webp'
 import webdev from '../images/webdevelopment.png'
-import {GoSearch} from 'react-icons/Go'
+import { GoSearch } from 'react-icons/go'
 
 
 
@@ -382,72 +382,6 @@ const data = [
   ]
 
 
-
-
- 
-
-
-//   const random =Math.floor(Math.random()*data.length).map((card) =>( 
-
-//     <div  key={card.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
-              
-//     <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>    
-//     <Image className='w-[252px] h-[132px] rounded-t-lg' src={card.image}/> 
-//     </div>
-
-//     <div className='w-[252px] h-[213px] bg-[#fcf7f7] border-r-2'>
-//           <div className=' w-fit rounded-[1.25rem] p-2 bg-[#E8e4f8] mt-6 ml-4 '>
-//             <h1 className='text-xs text-center text-[#7A77FF] font-normal '>
-//                 {card.title}
-//             </h1>
-//           </div>
-
-//           <h2 className='text-sm text-[#333333] font-semibold h-[34px] mt-4  ml-4'>
-//             {card.subtitle}
-//           </h2>
-
-//           <p className=' text-[#7a77ff] font-normal text-xs mt-4 ml-4 '>
-//             {card.names}
-//           </p>
-
-//             <div className='W-[156PX] h-[34px] gap-2  mt-4 flex flex-col ml-4'>
-
-//               <span className=' gap-4'>
-//                 <p className=' text-[10px] font-normal text-[#111111]'>
-//                 {card.rating}
-//                 </p>
-
-//                 <p>
-                  
-//                 </p>
-
-//                 <p className='text-[#111111] text-[10px] font-normal'>
-//                     {card.viewnums}
-//                 </p>
-//               </span>
-              
-
-//               <span className='gap-3 flex'>
-
-//                 <p className='font-light text-[#111111] text-[10px] '>
-//                   {card.newprice} 
-//                 </p>
-
-//                 <p className='font-light text-[#666666] text-[10px] line-through'>
-//                 {card.oldprice}
-//                 </p>
-
-//               </span>
-              
-//             </div>
-
-//     </div>
-
-//   </div>
-// ))
-
-
-
   const first = data.slice(0, 8).map((card) =>( 
 
     <div  key={card.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
@@ -506,9 +440,6 @@ const data = [
 
   </div>
 ))
-
-
-
 
 
 export default function Courses() {
@@ -868,7 +799,7 @@ export default function Courses() {
 
     <section className='h-full'>
         
-        <div className={`h-[30.8125rem] w-[67.5rem] rounded-[16px] mx-[6.25rem] mt-[2rem] flex justify-center item-center  ${style.background} `  }>
+        <div className={`h-[30.8125rem] w-[67.5rem] rounded-[16px] mx-[6.25rem] mt-[136px] flex justify-center item-center  ${style.background} `  }>
             {/* <Image className=' h-[30.8125rem] w-[67.5rem]  rounded-[8px]' width={200} height={200} src={pic}/> */}
             <h1 className='w-fit h-fit my-auto opacity-60 text-red-400 text-[96px] font-semibold'>
             Courses
@@ -876,7 +807,7 @@ export default function Courses() {
 
         </div>
         
-        <section className='h-[72.3125rem] w-[67.5rem] ml-[6.25rem]'>
+        <section className=' w-[67.5rem] ml-[6.25rem]'>
             <div className='mt-[4.5rem] '>
                  <p className='w-[145px] h-[29px] font-normal text-[24px] text-[#7A77FF] '>Our courses</p>
 
@@ -936,7 +867,7 @@ export default function Courses() {
 
                   </div>
 
-                  <div className='h-[1538px] mx-[100px] mt-14  gap-6 flex flex-wrap items-start'>
+                  <div className=' mx-[100px] mt-14  gap-6 flex flex-wrap items-start'>
                             { activeItem === 'Most popular' ? first
                              : activeItem === 'Development' ? develop 
                              : activeItem === 'Business' ? business 
