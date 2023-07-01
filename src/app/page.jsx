@@ -17,7 +17,7 @@ import jobs from './jsonfiles/jobs.json'
 import Image from 'next/image'
 import React from 'react'
 import { BsPlayCircle } from 'react-icons/bs'
-import ill from './images/illustration.png'
+import ill from './images/Illustration.png'
 
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
