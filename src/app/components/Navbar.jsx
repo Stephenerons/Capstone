@@ -8,12 +8,6 @@ import Link from 'next/link'
 
 export default function Navbar() {
 
-const [style, setStyle] = useState('')
-
-const activate = (color) => (
-  setStyle((prevStyle) => (prevStyle === color ? '' : color))
-
-)
 
   return (
     <>
