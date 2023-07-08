@@ -1,49 +1,66 @@
- [    {
-      "id": 1,
-      "name": "John Doe",
-      "specialty": "Web Development",
-      "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "specialty": "Data Science",
-      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-    },
-    {
-      "id": 3,
-      "name": "Mike Johnson",
-      "specialty": "Mobile App Development",
-      "image": "https://images.unsplash.com/photo-1573497620166-aef748c8c792?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-    },
-    {
-      "id": 4,
-      "name": "Sarah Thompson",
-      "specialty": "Cybersecurity",
-      "image": "https://images.unsplash.com/photo-1521737451536-00a86f630f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-    },
-    {
-      "id": 5,
-      "name": "David Wilson",
-      "specialty": "Artificial Intelligence",
-      "image": "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-    },
-    {
-      "id": 6,
-      "name": "Emily Davis",
-      "specialty": "UI/UX Design",
-      "image": "https://plus.unsplash.com/premium_photo-1661765192121-f398fd1e8fa2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-    },
-    {
-      "id": 7,
-      "name": "Ryan Anderson",
-      "specialty": "Cloud Computing",
-      "image": "https://images.unsplash.com/photo-1508341591423-4347099e1f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI5fHx0ZWNoJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-    },
-    {
-      "id": 8,
-      "name": "Olivia Martin",
-      "specialty": "Blockchain",
-      "image": "https://images.unsplash.com/photo-1573166953836-06864dc70a21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ5fHx0ZWNoJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-    }
-  ]
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "specialty": "Web Development",
+    "slug": "John-Doe",
+    "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "bio": "John Doe is a skilled web developer with expertise in front-end and back-end development. He has worked on numerous web projects, delivering high-quality and user-friendly websites."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "specialty": "Data Science",
+    "slug": "Jane-Smith",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
+    "bio": "Jane Smith is a data scientist with a passion for extracting insights from complex data sets. She specializes in machine learning and statistical analysis, helping businesses make data-driven decisions."
+  },
+  {
+    "id": 3,
+    "name": "Mike Johnson",
+    "specialty": "Mobile App Development",
+    "slug": "Mike-Johnson",
+    "image": "https://images.unsplash.com/photo-1573497620166-aef748c8c792?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+    "bio": "Mike Johnson is a mobile app developer experienced in developing cross-platform applications. He has a deep understanding of mobile app architecture and has delivered successful apps for various industries."
+  },
+  {
+    "id": 4,
+    "name": "Sarah Thompson",
+    "specialty": "Cybersecurity",
+    "slug": "Sarah-Thompson",
+    "image": "https://images.unsplash.com/photo-1521737451536-00a86f630f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "bio": "Sarah Thompson is a cybersecurity expert specializing in protecting organizations from cyber threats. She has a strong background in network security and helps businesses implement robust security measures."
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "specialty": "Artificial Intelligence",
+    "slug": "David-Wilson",
+    "image": "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+    "bio": "David Wilson is an artificial intelligence enthusiast with a focus on machine learning algorithms. He has worked on AI projects that leverage cutting-edge techniques to solve complex problems."
+  },
+  {
+    "id": 6,
+    "name": "Emily Davis",
+    "specialty": "UI/UX Design",
+    "slug": "Emily-Davis",
+    "image": "https://plus.unsplash.com/premium_photo-1661765192121-f398fd1e8fa2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "bio": "Emily Davis is a talented UI/UX designer who creates visually appealing and intuitive user interfaces. She has a keen eye for detail and works closely with development teams to bring designs to life."
+  },
+  {
+    "id": 7,
+    "name": "Ryan Anderson",
+    "specialty": "Cloud Computing",
+    "slug": "Ryan-Anderson",
+    "image": "https://images.unsplash.com/photo-1508341591423-4347099e1f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI5fHx0ZWNoJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+    "bio": "Ryan Anderson is a cloud computing expert who harnesses the power of cloud technologies to drive scalability and efficiency. With expertise in cloud platforms such as AWS and Azure, he architects robust and secure cloud solutions."
+  },
+  {
+    "id": 8,
+    "name": "Olivia Martin",
+    "specialty": "Blockchain",
+    "slug": "Olivia-Martin",
+    "image": "https://images.unsplash.com/photo-1573166953836-06864dc70a21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ5fHx0ZWNoJTIwcGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+    "bio": "Olivia Martin is a blockchain enthusiast and developer. She has a deep understanding of blockchain technology and its applications. Olivia helps businesses implement blockchain solutions for secure and transparent transactions."
+  }
+]

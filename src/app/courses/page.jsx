@@ -384,7 +384,7 @@ const data = [
 
   const first = data.slice(0, 8).map((card) =>( 
 
-    <div  key={card.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+    <div  key={card.id} className=' cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
               
     <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>    
     <Image className='w-[252px] h-y[132px] rounded-t-lg' src={card.image} alt={card.names}/> 
@@ -453,7 +453,7 @@ export default function Courses() {
 
 
     const develop = randomItems1.map( (item) => (
-        <div  key={item.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+        <div  key={item.id} className='cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
               
         <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>    
         <Image className='w-[252px] h-[132px] rounded-t-lg' src={item.image} alt={item.names}/> 
@@ -511,7 +511,7 @@ export default function Courses() {
     ))
     
     const business = randomItems2.map( (item) => (
-        <div  key={item.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+        <div  key={item.id} className='cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
               
         <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>    
         <Image className='w-[252px] h-[132px] rounded-t-lg' src={item.image}  alt={item.names}/> 
@@ -570,7 +570,7 @@ export default function Courses() {
     
 
     const design = randomItems3.map( (item) => (
-        <div  key={item.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+        <div  key={item.id} className='cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
               
         <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>    
         <Image className='w-[252px] h-[132px] rounded-t-lg' src={item.image}  alt={item.names}/> 
@@ -629,7 +629,7 @@ export default function Courses() {
     
 
     const marketing = randomItems4.map( (item) => (
-        <div  key={item.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+        <div  key={item.id} className='cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
               
         <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>    
         <Image className='w-[252px] h-[132px] rounded-t-lg' src={item.image}  alt={item.names}/> 
@@ -688,7 +688,7 @@ export default function Courses() {
     
 
     const health = randomItems5.map( (item) => (
-        <div  key={item.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+        <div  key={item.id} className='cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
               
         <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>    
         <Image className='w-[252px] h-[132px] rounded-t-lg' src={item.image}  alt={item.names}/> 
@@ -800,7 +800,7 @@ export default function Courses() {
     <section className='h-full'>
         
         <div className={`h-[30.8125rem] w-[67.5rem] rounded-[16px] mx-[6.25rem] mt-[136px] flex justify-center item-center  ${style.background} `  }>
-            {/* <Image className=' h-[30.8125rem] w-[67.5rem]  rounded-[8px]' width={200} height={200} src={pic}/> */}
+            {/* <Image className=' h-[30.8125rem] w-[67.5rem]  rounded-[8px]' width={200} height={200} src={style.background}/> */}
             <h1 className='w-fit h-fit my-auto opacity-60 text-red-400 text-[96px] font-semibold'>
             Courses
             </h1>
@@ -841,27 +841,27 @@ export default function Courses() {
                   <div className ='w-[1080px] h-[53px] mt-[40px] gap-[56px] flex items-center '>
 
 
-                      <button onClick={ () =>handleButtonClick('Most popular')} className = {activeItem === 'Most popular' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] h-[24px] w-[138px]'} >
+                      <button onClick={ () =>handleButtonClick('Most popular')} className = {activeItem === 'Most popular' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] hover:text-[#ff7777] h-[24px] w-[138px]'} >
                        <p>Most popular </p> 
                       </button>
                       
-                      <button onClick={ () =>handleButtonClick('Development')} className = {activeItem === 'Development' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] h-[24px] w-[138px]'} >
+                      <button onClick={ () =>handleButtonClick('Development')} className = {activeItem === 'Development' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] hover:text-[#ff7777] h-[24px] w-[138px]'} >
                           Development
                       </button>
                       
-                      <button onClick={ () =>handleButtonClick('Business')} className = {activeItem === 'Business' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] h-[24px] w-[138px]'} >
+                      <button onClick={ () =>handleButtonClick('Business')} className = {activeItem === 'Business' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] hover:text-[#ff7777] h-[24px] w-[138px]'} >
                           Business
                       </button>
                         
-                      <button onClick={ () =>handleButtonClick('Design')} className = {activeItem === 'Design' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] h-[24px] w-[138px]'} >
+                      <button onClick={ () =>handleButtonClick('Design')} className = {activeItem === 'Design' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] hover:text-[#ff7777] h-[24px] w-[138px]'} >
                           Design
                       </button>
                         
-                      <button onClick={ () =>handleButtonClick('Marketing')} className = {activeItem === 'Marketing' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] h-[24px] w-[138px]'}  >
+                      <button onClick={ () =>handleButtonClick('Marketing')} className = {activeItem === 'Marketing' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] hover:text-[#ff7777] h-[24px] w-[138px]'}  >
                           Marketing
                       </button>
                         
-                      <button onClick={ () =>handleButtonClick('Health & Fitness')}className = {activeItem === 'Health & Fitness' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] h-[24px] w-[138px]'} >
+                      <button onClick={ () =>handleButtonClick('Health & Fitness')}className = {activeItem === 'Health & Fitness' ? 'font-normal text-[16px] text-[#ffffff] py-[12px] px-[10px] bg-[#ff7777] border rounded-[25px] text-center w-[200px]  gap-[10px]' : 'font-normal text-[16px] text-[#666666] hover:text-[#ff7777] h-[24px] w-[138px]'} >
                            Health & Fitness
                       </button>
 

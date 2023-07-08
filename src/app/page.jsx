@@ -1,9 +1,10 @@
-"use client"
+"use client";
 import { useState } from 'react'
-import pic from './images/airbnb.png'
-import Slack from './images/Slack.png'
-import twitter from './images/twitter.png'
-import mapbox from './images/mapbox.png'
+import { BsSlack } from 'react-icons/Bs'
+import { FaAirbnb } from 'react-icons/Fa'
+import { BsTwitter } from 'react-icons/Bs'
+import { SiMapbox } from 'react-icons/Si'
+import { BsStarFill} from 'react-icons/Bs'
 import tools from './images/tools.webp'
 import Ads from './images/Googleads.png'
 import laptop from './images/laptopondeskbcg.jpg'
@@ -16,8 +17,12 @@ import 'swiper/swiper-bundle.min.css';
 import jobs from './jsonfiles/jobs.json'
 import Image from 'next/image'
 import React from 'react'
-import { BsPlayCircle } from 'react-icons/bs'
-import ill from './images/Illustration.png'
+import { BsPlayCircle } from 'react-icons/Bs'
+import ill from './images/Illus.png'
+import Link from 'next/link'
+import Courses from './courses/page'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
@@ -29,7 +34,7 @@ const data = [
   {
     "id": 1,
     "rating": 5,
-    "stars": 5,
+    "stars": [<BsStarFill key={1} />, <BsStarFill key={2} />, <BsStarFill key={3} />, <BsStarFill key={3} />, <BsStarFill key={3} />],
     "viewnums": '(400)',
     "newprice": '$170',
     "oldprice": '$350',
@@ -302,7 +307,7 @@ export default function Page() {
 
   const filteredCard = data.slice(0, 8).map((card) => (
 
-    <div key={card.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+    <div key={card.id} className='cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
 
       <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>
         <Image className='w-[252px] h-[132px] rounded-t-lg' src={card.image} width={200} height={200} alt={card.title} />
@@ -326,14 +331,16 @@ export default function Page() {
 
         <div className='W-[156PX] h-[34px] gap-2  mt-4 flex flex-col ml-4'>
 
-          <span className=' gap-4'>
+          <span className='flex gap-4'>
             <p className=' text-[10px] font-normal text-[#111111]'>
               {card.rating}
             </p>
 
-            <p>
-
-            </p>
+            {/* <span>
+            {card.stars.map((star, index) => (
+              <span key={index}>{star}</span>
+            ))}
+            </span> */}
 
             <p className='text-[#111111] text-[10px] font-normal'>
               {card.viewnums}
@@ -364,7 +371,7 @@ export default function Page() {
 
   const card = data.map((card) => (
 
-    <div key={card.id} className=' w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+    <div key={card.id} className='cursor-pointer w-[252px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
 
       <div className='w-[252px] h-[132px] rounded-t-[8px] border-r-2 '>
         <Image className='w-[252px] h-[132px] rounded-t-lg' width={100} height={100} src={card.image} alt={card.title} />
@@ -446,10 +453,13 @@ export default function Page() {
 
   return (
 
+    
+
     <section className='h-full'>
+      <Navbar/>
 
 
-      <div className=' w-[1080px]  h-[30.8125rem] bg-[#F6E5E3] rounded-[1.5625rem]  mx-[100px] mt-[136px] flex ' >
+      <div className=' w-[1080px]  h-[30.8125rem bg-[#F6E5E3] rounded-[1.5625rem]  mx-[100px] mt-[136px] flex ' >
 
           <div className='flex ml-[4rem] flex-col'>
 
@@ -472,11 +482,11 @@ export default function Page() {
 
                       <button className='flex ml-[45px] my-auto'>
 
-                              <span className='mr-[15px]'>
+                              <span className='mr-[15px] hover:text-[#FF7777] transition-colors duration-300'>
                                      <BsPlayCircle size={25} />
                               </span>
 
-                              <p className=' font-normal text-[#333333] '>
+                              <p className=' hover:text-[#FF7777] font-normal text-[#333333] transition-colors duration-300'>
                                        Watch course
                               </p>
                       </button>
@@ -485,7 +495,7 @@ export default function Page() {
       
           </div>
 
-                  <Image className='w-[531px] h-[493px]'  src={ill} width={800} height={800} alt='a_pleasant_girl_illustration'/>
+                  <Image className='w-[531px] h-[493px]' src={ill} width={800} height={800} alt='a_pleasant_girl_illustration'/>
  
       </div>
 
@@ -497,11 +507,10 @@ export default function Page() {
           </h2>
 
           <div className='flex justify-center gap-[80px] mt-[88px]'>
-            <Image className='w-[117.78px]' src={pic} alt='airbnb' width={50} height={50}/>
-            <Image className='w-[45.21px]' src={twitter} width={50} height={50} alt='twitter' />
-            <Image className='w-[161.9px]' src={mapbox} width={50} height={50} alt='mapbox' />
-            <Image className='w-[149.28px]' src={Slack} width={50} height={50} alt='Slack' />
-
+            <Link href={'https://www.airbnb.co.uk/signup_login'} passHref> <span className=' hover:text-[#FF7777] transition-colors duration-300 text-[42px] text-[#a4b3c5] flex' size={150}> <FaAirbnb/><span className='text-[24px] font-semibold my-auto'>airbnb</span> </span> </Link>
+            <Link href={'https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den'} passHref> <span className=' hover:text-[#00acee] transition-colors duration-300 text-[42px] text-[#a4b3c5] flex' size={100}> <BsTwitter/> </span> </Link>
+            <Link href={'https://account.mapbox.com/auth/signin/'} passHref> <span className=' hover:text-[#3bb2d0] transition-colors duration-300 text-[42px] text-[#a4b3c5] flex' size={50}> <SiMapbox />  <span className='text-[24px] font-semibold my-auto pl-1'>  mapbox</span></span></Link>
+            <Link href={'https://slack.com/intl/en-gb/get-started#/createnew'} passHref> <span className=' hover:text-[#FF7777] transition-colors duration-300 text-[42px] text-[#a4b3c5] flex' size={250}> <BsSlack/> <span className='text-[24px] font-semibold my-auto pl-1'> Slack</span> </span></Link>
           </div>
 
           <div>
@@ -521,25 +530,9 @@ export default function Page() {
                 <p>Most popular </p>
               </span>
 
-              <span className='font-normal text-[16px] text-[#666666] h-[24px] w-[138px]  '>
-                Development
-              </span>
-
-              <span className='font-normal text-[16px] text-[#666666] h-[24px] w-[138px]' >
-                Business
-              </span>
-
-              <span className='font-normal text-[16px] text-[#666666]' >
-                Design
-              </span>
-
-              <span className='font-normal text-[16px] text-[#666666]' >
-                Marketing
-              </span>
-
-              <span className='font-normal text-[16px] text-[#666666] w-[242px] h-[24px]' >
-                Health & Fitness
-              </span>
+              <Link href={'./courses'} passHref> <span className='font-normal hover:text-[#ff7777] transition-colors duration-300 text-[16px] text-[#666666] h-[24px]  '>
+                Explore more courses
+              </span></Link>
 
             </div>
           </div>
@@ -548,7 +541,7 @@ export default function Page() {
             {isExpanded ? card : filteredCard}
           </div>
 
-          <div className=' mt-10 mb-[102px] rounded-lg border w-fit border-[#FF7777] mx-auto'>
+          <div className=' mt-10 mb-[102px] rounded-lg hover:border w-fit hover:border-[#FF7777] transition-colors duration-300 mx-auto'>
             <button onClick={view} className=' text-[#333] bg-[#FFEBEB] font-normal  text-xl p-4 rounded-lg   ' >
               {isExpanded ? 'View Less' : 'View More'}
             </button>
@@ -583,7 +576,8 @@ export default function Page() {
           >
             {jobs.map((job) => (
               <SwiperSlide key={job.id}>
-                <div className=' w-[252px] h-[394px] rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
+                <Link href={`../details/${job.slug}`} passHref>
+                <div className=' w-[252px] h-fit rounded-lg border-2 flex flex-col transform hover:scale-105 hover:shadow-lg'>
 
                   <div className='w-[252px] h-[267px] rounded-t-[8px] border-r-2  bg-blue-600'>
                     <Image className='w-[252px] h-[267px] rounded-t-lg' width={200} height={200} src={job.image} alt={job.name} />
@@ -591,7 +585,7 @@ export default function Page() {
 
                   <div className='w-[252px] h-[157px] bg-[#fcf7f7] border-r-2 rounded-b-lg'>
 
-                    <h1 className='text-[1.75rem] text-center text-[#333] font-semibold mt-8 '>
+                    <h1 className='text-[20px] text-center text-[#333] font-semibold mt-8 '>
                       {job.name}
                     </h1>
 
@@ -602,6 +596,7 @@ export default function Page() {
                   </div>
 
                 </div>
+                </Link>
 
               </SwiperSlide>
             ))}
@@ -621,9 +616,9 @@ export default function Page() {
 
           <button className='rounded-lg bg-[#FF7777] mt-[2.62rem] w-[165px] h-[44px] ml-[56px] '>
 
-            <p className='py-3 px-4 text-base text-white '>
+           <Link href={'./courses'}  passHref> <p className='py-3 px-4 text-base text-white '>
               Get started now
-            </p>
+            </p> </Link>
 
           </button>
 
@@ -637,17 +632,18 @@ export default function Page() {
 
       </div>
 
+      <Footer/>
+
 
 
     </section>
 
     // add dark mode 
-    // add hover effects 
     // add card effects 
-    // add cursors to clickable
-    // add links to icons 
     // add animations 
     // recustomize the swiper 
+    //recustomize loading jsx 
+    // dynamic rendering 
 
 
   )

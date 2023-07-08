@@ -11,7 +11,7 @@ export default function Navbar() {
 const [style, setStyle] = useState('')
 
 const activate = (color) => (
-  setStyle(color)
+  setStyle((prevStyle) => (prevStyle === color ? '' : color))
 
 )
 
@@ -28,9 +28,9 @@ const activate = (color) => (
 
                     <span>
                    <ul className=' md:flex md:flex-row md:justify-around md:gap-[53px] md:h-fit md:w-fit md:mr-[53px] md:pt-[34px]  '>
-                         <Link onClick={ () =>  activate('Home')} href='../'> <li className={ style === setStyle ? 'text-[#FF7777]' : 'font-medium text-[20px] text-center' }>Home</li> </Link> 
-                         <Link onClick={ () => activate('Courses')}  href={'../courses'}> <li className=' font-medium text-[20px] text-center'>Courses</li> </Link> 
-                         <Link onClick={ () => activate('Dashboard')} href={'../'}> <li className=' font-medium text-[20px] text-center'>Dashboard</li> </Link> 
+                         <Link   href='../' passHref> <li className='font-medium text-[20px] hover:text-[#FF7777] text-center'>Home</li> </Link> 
+                         <Link   href={'../courses'} passHref> <li className=' font-medium text-[20px] hover:text-[#FF7777] text-center'>Courses</li> </Link> 
+                         <Link  href={'../'} passHref> <li className=' font-medium text-[20px] hover:text-[#FF7777]  text-center'>Dashboard</li> </Link> 
                    </ul>
                    </span>
                    
@@ -38,7 +38,7 @@ const activate = (color) => (
                       
 
                      <div className=' md:pt-[24px]  mr-8 '>
-                        <button className='w-[117px] h-[40px] px-[16px] rounded-[6px] bg-[#F6E5E3] text-[20px] text-[#FF7777] font-medium'> Register </button> 
+                       <Link href={'../register/signup'} passHref> <button className='w-[117px] h-[40px] px-[16px] rounded-[6px] bg-[#F6E5E3] text-[20px] text-[#FF7777] font-medium'> Register </button></Link> 
                      </div>
                     
                 </div>
