@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react'
-import { BsSlack, BsPlayCircle, BsStarFill,  BsTwitter  } from 'react-icons/Bs'
+import { BsSlack, BsPlayCircle, BsStarFill,  BsTwitter  } from 'react-icons/bs'
 import { FaAirbnb } from 'react-icons/fa'
 import { SiMapbox } from 'react-icons/si'
 import tools from './images/tools.webp'

@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import {useParams} from 'next/navigation'
-import {BsTwitter, BsLinkedin} from 'react-icons/Bs'
+import {BsTwitter, BsLinkedin} from 'react-icons/bs'
 import jobs from '../../jsonfiles/jobs.json'
 
 const ProductDetails = ({ params }) => {

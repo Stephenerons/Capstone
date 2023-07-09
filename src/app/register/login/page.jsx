@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import {FcGoogle} from 'react-icons/Fc'
+import {FcGoogle} from 'react-icons/fc'
 import {SiFacebook, SiApple} from 'react-icons/si'
 import style from './login.module.css'
 
