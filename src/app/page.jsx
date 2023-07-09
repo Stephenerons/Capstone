@@ -1,10 +1,8 @@
 "use client";
 import { useState } from 'react'
-import { BsSlack } from 'react-icons/Bs'
-import { FaAirbnb } from 'react-icons/Fa'
-import { BsTwitter } from 'react-icons/Bs'
-import { SiMapbox } from 'react-icons/Si'
-import { BsStarFill} from 'react-icons/Bs'
+import { BsSlack, BsPlayCircle, BsStarFill,  BsTwitter  } from 'react-icons/Bs'
+import { FaAirbnb } from 'react-icons/fa'
+import { SiMapbox } from 'react-icons/si'
 import tools from './images/tools.webp'
 import Ads from './images/Googleads.png'
 import laptop from './images/laptopondeskbcg.jpg'
@@ -17,10 +15,8 @@ import 'swiper/swiper-bundle.min.css';
 import jobs from './jsonfiles/jobs.json'
 import Image from 'next/image'
 import React from 'react'
-import { BsPlayCircle } from 'react-icons/Bs'
-import ill from './images/Illus.png'
 import Link from 'next/link'
-import Courses from './courses/page'
+// import Courses from './courses/page'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -495,7 +491,7 @@ export default function Page() {
       
           </div>
 
-                  <Image className='w-[531px] h-[493px]' src={ill} width={800} height={800} alt='a_pleasant_girl_illustration'/>
+                  <Image className='w-[531px] h-[493px]' src='/illus.png' width={800} height={800} alt='a_pleasant_girl_illustration'/>
  
       </div>
 
