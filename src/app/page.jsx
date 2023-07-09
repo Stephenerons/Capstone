@@ -483,7 +483,7 @@ export default function Page() {
                               </span>
 
                               <p className=' hover:text-[#FF7777] font-normal text-[#333333] transition-colors duration-300'>
-                                       Watch course
+                                       Watch courses
                               </p>
                       </button>
                    </span>
@@ -499,7 +499,7 @@ export default function Page() {
 
         <div className=''>
           <h2 className=' w-[581px] h-[118px] mt-[120px] ml-[250px] font-semibold text-[48px] text-[#333333] text-center'>
-            Trusted by  more than 150+ companies
+            Trusted by more than 150+ companies
           </h2>
 
           <div className='flex justify-center gap-[80px] mt-[88px]'>
